@@ -3,6 +3,7 @@ package committee.nova.mods.slotlock.mixin;
 import committee.nova.mods.slotlock.SlotLock;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
+import net.minecraft.client.gui.screens.ReceivingLevelScreen;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.LocalPlayer;
 import org.jetbrains.annotations.Nullable;
@@ -22,7 +23,7 @@ public class MinecraftClientMixin {
 
     @SuppressWarnings("ConstantConditions")
     @Inject(at = @At("HEAD"), method = "setLevel")
-    public void joinWorld(ClientLevel world, CallbackInfo info) {
+    public void joinWorld(ClientLevel clientLevel, ReceivingLevelScreen.Reason reason, CallbackInfo ci) {
         SlotLock.handleJoinWorld(((Minecraft) ((Object) this)));
     }
 

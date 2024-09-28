@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[50,)"
+loaderVersion = "[4,)"
 #issueTrackerURL = ""
 license = "MPL V2"
 
@@ -14,15 +14,18 @@ Lock slots!
 logoFile = "icon.png"
 
 [[dependencies.slotlock]]
-modId = "forge"
-mandatory = true
-versionRange = "[50,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.slotlock]]
 modId = "minecraft"
-mandatory = true
+type = "required"
 versionRange = "[1.21,)"
 ordering = "NONE"
 side = "CLIENT"
+
+[[mixins]]
+config = "slotlock.mixins.json"

@@ -31,7 +31,7 @@ public abstract class HandledScreenMixin<T extends AbstractContainerMenu> extend
         super(title);
     }
 
-    private static final ResourceLocation SLOT_LOCK_TEXTURE = new ResourceLocation(SlotLock.MOD_ID, "textures/gui/lock_overlay.png");
+    private static final ResourceLocation SLOT_LOCK_TEXTURE = ResourceLocation.tryBuild(SlotLock.MOD_ID, "textures/gui/lock_overlay.png");
     @Shadow @Nullable protected Slot hoveredSlot;
     @Shadow @Final protected T menu;
 
