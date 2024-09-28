@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "package": "committee.nova.mods.slotlock.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "minVersion": "0.8",
+  "client": [
+    "ClientPlayerEntityMixin",
+    "CreativeInventoryScreenMixin",
+    "CreativeSlotAccessor",
+    "HandledScreenMixin",
+    "InGameHudMixin",
+    "KeyBindingAccessor",
+    "MinecraftClientMixin"
+  ],
+  "mixins": [
+    "ScreenHandlerMixin",
+    "ServerWorldAccessor",
+    "SlotAccessor",
+    "SlotMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

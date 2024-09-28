@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "slotlock",
+  "version": "${version}",
+  "name": "SlotLock",
+  "description": "Lock Slots!",
+  "authors": [
+    "cnlimiter"
+  ],
+  "contact": {
+    "sources": "https://github.com/Nova-Committee/slotlock"
+  },
+  "license": "MPL V2",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "committee.nova.mods.slotlock.fabric.client.SlotLockFabricClient"
+    ]
+  },
+  "mixins": [
+    "slotlock.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}

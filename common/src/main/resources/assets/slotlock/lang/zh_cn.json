@@ -1,0 +1,6 @@
+{
+	"key.slotlock": "锁定槽",
+	"slotlock.locked": "§c这个槽位被上锁啦!",
+	"slotlock.press1": "§n§9点击 §f",
+	"slotlock.press2": "§9 以解锁."
+}

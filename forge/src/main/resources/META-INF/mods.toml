@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "MPL V2"
+
+[[mods]]
+modId = "slotlock"
+version = "${version}"
+displayName = "SlotLock"
+authors = "cnlimiter"
+description = '''
+Lock slots!
+'''
+logoFile = "icon.png"
+
+[[dependencies.slotlock]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.slotlock]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
